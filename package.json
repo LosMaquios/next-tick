@@ -1,0 +1,24 @@
+{
+  "name": "next-tick",
+  "version": "1.0.0",
+  "description": "Flush callbacks on next event loop tick",
+  "main": "index.js",
+  "repository": "https://github.com/aeroxmotion/es2015-set-polyfill",
+  "author": "Camilo Rodríguez <aeromotiondesign@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "ava test.js --verbose"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/register": "^7.0.0-beta.44",
+    "ava": "^1.0.0-beta.3"
+  },
+  "ava": {
+    "require": [
+      "@babel/register"
+    ]
+  }
+}
