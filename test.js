@@ -24,11 +24,13 @@ test.cb('callback into next tick', t => {
 })
 
 test.cb('callback after flush', t => {
-  t.plan(3)
+  t.plan(1)
 
   let calls = 0
 
-  const incrementCalls = () => calls += 1
+  const incrementCalls = () => {
+    calls += 1
+  }
 
   nextTick.afterFlush(() => {
     t.is(calls, 3, '`calls` should be 3')
