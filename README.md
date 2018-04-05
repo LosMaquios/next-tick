@@ -1,4 +1,4 @@
-# NextTick
+# NextTick
 
   Flush your callbacks on the next event loop tick
 
