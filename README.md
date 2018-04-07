@@ -7,7 +7,7 @@
   Installation using rawgit (temporary):
 
 ```js
-import nextTick from 'https://cdn.rawgit.com/LosMaquios/next-tick/5d167294/index.js'
+import nextTick from 'https://cdn.jsdelivr.net/gh/LosMaquios/next-tick/index.js'
 
 nextTick(() => {
   console.log('Something deferred')
