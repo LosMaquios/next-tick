@@ -2,16 +2,30 @@
 
   Flush your callbacks on the next event loop tick
 
-## Usage
+## Installation
 
-  Installation using rawgit (temporary):
+  From CDN:
 
 ```js
-import nextTick from 'https://cdn.rawgit.com/LosMaquios/next-tick/5d167294/index.js'
+import nextTick from 'https://cdn.jsdelivr.net/gh/LosMaquios/next-tick/index.js'
+```
 
+  From NPM:
+
+```bash
+$ npm install next-tick
+```
+
+## Usage
+
+```js
 nextTick(() => {
-  console.log('Something deferred')
+  console.log(' deferred')
 })
+
+console.log('Execution')
+
+// Output: Execution deferred
 ```
 
 ## API Reference
